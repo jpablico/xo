@@ -8,3 +8,14 @@ const text = document.createTextNode("Yayeet");
 	div.appendChild(text);
 
 	
+var myModule = (function() {
+	'use strict';
+
+	return {
+		publicMethod: function() {
+			console.log('Hello World!');
+		}
+	};
+})();
+
+myModule.publicMethod();

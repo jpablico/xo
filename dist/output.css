@@ -538,16 +538,8 @@ video {
   display: flex;
 }
 
-.content-center {
-  align-content: center;
-}
-
 .justify-center {
   justify-content: center;
-}
-
-.place-self-center {
-  place-self: center;
 }
 
 .bg-red-400 {
