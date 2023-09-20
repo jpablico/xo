@@ -8,10 +8,14 @@ const gameXnO = (function() {
 			var createDiv = document.createElement('div');
 			createDiv.className = 'gameTile bg-blue-400 border-solid';
 			createDiv.innerHTML = 'Tile';
+
+			createDiv.addEventListener("click", function() {
+				console.log("BOP")
+			})
 			document.getElementById('main').appendChild(createDiv);
-		}
-		console.log("Bop");
-		gameBoard.forEach(gameBoardInitialization)
+
+			}
+		gameBoard.forEach(gameBoardInitialization);
 	}
 
 	return {
