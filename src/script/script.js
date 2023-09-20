@@ -1,21 +1,26 @@
-const body = document.getElementById("body");
+const gameXnO = (function() {
+	"use strict";
 
-const div = document.createElement("div");
-	div.classList.add("bg-red-400");
-	body.appendChild(div);
+	function gameBoardSetup() {
+		const gameBoard = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 
-const text = document.createTextNode("Yayeet");
-	div.appendChild(text);
-
-	
-var myModule = (function() {
-	'use strict';
+		function gameBoardInitialization() {
+			var createDiv = document.createElement('div');
+			createDiv.className = 'gameTile bg-blue-400 border-solid';
+			createDiv.innerHTML = 'Tile';
+			document.getElementById('main').appendChild(createDiv);
+		}
+		console.log("Bop");
+		gameBoard.forEach(gameBoardInitialization)
+	}
 
 	return {
 		publicMethod: function() {
-			console.log('Hello World!');
+			gameBoardSetup();
 		}
 	};
 })();
 
-myModule.publicMethod();
+
+gameXnO.publicMethod();
+
