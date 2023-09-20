@@ -6,7 +6,7 @@ const gameXnO = (function() {
 
 		function gameBoardInitialization() {
 			var createDiv = document.createElement('div');
-			createDiv.className = 'gameTile bg-blue-400 border-solid';
+			createDiv.className = 'gameTile bg-blue-400 border-solid w-40 h-40 flex flex-1 box-border';
 			createDiv.innerHTML = 'Tile';
 
 			createDiv.addEventListener("click", function() {
